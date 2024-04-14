@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML & CSS practice</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <!-- Glavna navigacija -->
+            <div class="header-navbar">
+                <h1 class="logo-h1"><a class="logo"  href="#" >INDEXhr</a></h1>
+                <ul>
+                    <li class="header-nav-item"><a href="#">NASLOVNICA</a></li>
+                    <li class="header-nav-item"><a href="#">VIJESTI</a></li>
+                    <li class="header-nav-item"><a href="#">SPORT</a></li>
+                    <li class="header-nav-item"><a href="#">MAGAZIN</a></li>
+                    <li class="header-nav-item"><a href="#">OGLASI</a></li>
+                    <li class="header-nav-item"><a href="#">RECEPTI</a></li>
+                    <li class="header-nav-item"><a href="#">OSTALO</a></li>
+                </ul>
+            </div>
+        </header>
+
+        
+        <div class="main-homepage">
+        
+            <!-- navigacija po kategoriji -->
+            <div class="category-main-nav">
+                <ul>
+                    <li><a href="#">VIJESTI</a></li>
+                    <li><a href="#">Hrvatska</a></li>
+                    <li><a href="#">Zagreb</a></li>
+                    <li><a href="#">Regija</a></li>
+                    <li><a href="#">EU</a></li>
+                    <li><a href="#">Svijet</a></li>
+                    <li><a href="#">Crna kronika</a></li>
+                    <li><a href="#">Komentari</a></li>
+                    <li><a href="#">Novac</a></li>
+                    <li><a href="#">Afere</a></li>
+                </ul>
+            </div>
+        
+
+            <!-- glavni kontent-->
+            <div class="main-category-content">
+                <div class="top-box">
+                    <!-- veci dio -->
+                    <div class="left-part">
+                        <div class="first-news">
+                            <a class="vijesti-text-hover" href="#">
+                                <div class="img-holder">
+                                    <img src="./imgs/1.jpg" alt="Slika se ucitava">
+
+                                </div>
+                                <h2 class="title">Napad na šoping centar</h2>
+                            </a>
+                            <div class="summary">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, corporis eos? Illo ratione quis harum maiores? Ad deserunt tenetur labore! Tempora consequuntur rem unde in illum hic autem ratione adipisci?</p>
+                            </div>
+                        </div>
+                        
+                        <div class="home-related-holder">
+                            <h3 class="main-title">Vezane vijesti</h3>
+                            <ul>
+                                <li class="vezane-vijesti-li"><a class="vijesti-text-hover" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eaque itaque eum eligendi corrupti esse corporis eius at consequuntur, repellat delectus veniam ipsam voluptatibus hic doloribus natus. Magnam, ratione amet?</a></li>
+                                <li class="vezane-vijesti-li"><a class="vijesti-text-hover" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eaque itaque eum eligendi corrupti esse corporis eius at consequuntur, repellat delectus veniam ipsam voluptatibus hic doloribus natus. Magnam, ratione amet?</a></li>
+                                <li class="vezane-vijesti-li"><a class="vijesti-text-hover" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eaque itaque eum eligendi corrupti esse corporis eius at consequuntur, repellat delectus veniam ipsam voluptatibus hic doloribus natus. Magnam, ratione amet?</a></li>
+                            </ul>
+                        </div>
+                        <a class="comments" href="#">
+                            <i class="comment-img"></i>
+                            <span class="comment-count">12</span>
+                        </a>
+    
+                    </div>
+                    
+                    
+                    <!-- jednako velik kao left part -->
+                    <div class="right-part">
+                        <div class="other-news-holder ">
+                            <a class="news-item-container" href="#">
+                                <div class="news-item-holder ">
+                                        <div class="img-holder">
+                                            <img src="./imgs/1.jpg" alt="Slika se ucitava">
+                                        </div>
+                                    <h3 class="title">USKORO UZIVO</h3>
+                                </div>
+                            </a>
+                            <a class="news-item-container" href="#">
+                                <div class="news-item-holder flex">
+                                    <div class="img-holder">
+                                        <img src="./imgs/1.jpg" alt="Slika se ucitava">
+                                    </div>
+                                    <h3 class="title">Ovo je napadač</h3>
+                                </div>
+                            </a>
+                            <a class="news-item-container" href="#">
+                                <div class="news-item-holder flex">
+                                    
+                                    <div class="img-holder">
+                                        <img src="./imgs/1.jpg" alt="Slika se ucitava">
+                                    </div>
+                                    <h3 class="title">Krenite i vi naprijed</h3>
+                                </div>
+                            </a>
+                            <a class="news-item-container" href="#">
+                                <div class="news-item-holder flex">
+                                    
+                                    <div class="img-holder">
+                                        <img src="./imgs/1.jpg" alt="Slika se ucitava">
+                                    </div>
+                                    <h3 class="title">Ovi ljudi su stali</h3>
+                                </div>
+                            </a>
+                            <a class="news-item-container" href="#">
+                                <div class="news-item-holder flex">
+                                    
+                                    <div class="img-holder">
+                                        <img src="./imgs/1.jpg" alt="Slika se ucitava">
+                                    </div>
+                                    <h3 class="title">Najstariji na svijetu</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- sirina kao top box -->
+                <div class="featured-container">
+                    <h2 class="main-title">Teme i komentari</h2>
+                    <div class="flex">
+                        <div class="featured-item">
+                            <a class="vijesti-text-hover">
+                                <div class="img-holder">
+                                    <img src="./imgs/1.jpg" alt="Slika se ucitava">
+                                </div>
+                                <div class="topic vijesti-text">PARLAMENTARNI IZBORI</div>
+                            </a>
+                            <div>
+                                <a class="vijesti-text-hover" href="#">
+                                    <h3 class="title">Možemo</h3>
+                                </a>
+                                <a class="vijesti-text-hover" href="#">
+                                    <h3 class="title">Penava</h3>
+                                </a>
+                                <a class="vijesti-text-hover" href="#">
+                                    <h3 class="title">Butković</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="featured-item">
+                            <a class="vijesti-text-hover">
+                                <div class="img-holder">
+                                    <img src="./imgs/1.jpg" alt="Slika se ucitava">
+                                </div>
+                                <div class="topic vijesti-text">RAT U UKRAJINI</div>
+                            </a>
+                            <div>
+                                <a class="vijesti-text-hover" href="#">
+                                    <h3 class="title">Grlić Radman i švicarski ministar</h3>
+                                </a>
+                                <a class="vijesti-text-hover" href="#">
+                                    <h3 class="title">Rusija</h3>
+                                </a>
+                                <a class="vijesti-text-hover" href="#">
+                                    <h3 class="title">Nizozemska</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="featured-item">
+                            <a class="vijesti-text-hover">
+                                <div class="img-holder">
+                                    <img src="./imgs/1.jpg" alt="Slika se ucitava">
+                                </div>
+                                <div class="topic vijesti-text">RAT U IZRAELU</div>
+                            </a>
+                            <div>
+                                <a class="vijesti-text-hover" href="#">
+                                    <h3 class="title">Izraelci</h3>
+                                </a>
+                                <a class="vijesti-text-hover" href="#">
+                                    <h3 class="title">Izraelska vojska</h3>
+                                </a>
+                                <a class="vijesti-text-hover" href="#">
+                                    <h3 class="title">Prosvjednici u Švedskoj</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- desno od main content-a -->
+            <div class="home-category-timeline">
+                <div class="home-cube">
+                    <ul class="nav timeline-tab">
+                        <li><a href="#">Najnovije</a></li>
+                        <li><a href="#">Najčitanije</a></li>
+                    </ul>
+                    <div class="tab content">
+                        <ul>
+                            <li>
+                                <span>3</span>
+                                <span>min</span>
+                                <div class="title-box">
+                                    <a class="vijesti-text-hover" href="#">Tko su nezaposleni?</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span>10</span>
+                                <span>min</span>
+                                <div class="title-box">
+                                    <a class="vijesti-text-hover" href="#">Danci kupili</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span>15</span>
+                                <span>min</span>
+                                <div class="title-box">
+                                    <a class="vijesti-text-hover" href="#">Sve više Amerikanaca</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span>23</span>
+                                <span>min</span>
+                                <div class="title-box">
+                                    <a class="vijesti-text-hover" href="#">Šef ukrajinske vojske</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span>33</span>
+                                <span>min</span>
+                                <div class="title-box">
+                                    <a class="vijesti-text-hover" href="#">Naše ljude ne zanima</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <button>Prikaži još vijesti</button>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <footer>
+            <nav>
+                <nav id="menu-footer">
+                    <ul>
+                        <li><a href="#">VIJESTI</a></li>
+                        <li><a href="#">Hrvatska</a></li>
+                        <li><a href="#">Zagreb</a></li>
+                        <li><a href="#">Regija</a></li>
+                        <li><a href="#">EU</a></li>
+                        <li><a href="#">Svijet</a></li>
+                        <li><a href="#">Znanost</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">SPORT</a></li>
+                        <li><a href="#">Nogomet</a></li>
+                        <li><a href="#">Košarka</a></li>
+                        <li><a href="#">Tenis</a></li>
+                        <li><a href="#">Regija</a></li>
+                        <li><a href="#">Komentari</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">MAGAZIN</a></li>
+                        <li><a href="#">Shopping</a></li>
+                        <li><a href="#">Ljubimci</a></li>
+                        <li><a href="#">Food</a></li>
+                        <li><a href="#">Mame</a></li>
+                        <li><a href="#">Auto</a></li>
+                        <li><a href="#">Fit</a></li>
+                        <li><a href="#">Chill</a></li>
+                    </ul>
+                </nav>
+            </nav>
+        </footer>
+    </body>
+</html>
