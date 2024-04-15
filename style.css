@@ -43,12 +43,12 @@ a:hover{
   color: red;
 }
 
-.category-main-nav ul{
+.category-main ul{
   list-style: none;
   text-align: left;
 }
 
-.category-main-nav ul li{
+.category-main ul li{
   display: inline;
 }
 
@@ -62,7 +62,7 @@ a:hover{
 }
 
 
-.category-main-nav{
+.category-main{
   grid-row: 1;
   grid-column: 2/6;
 }
@@ -132,6 +132,7 @@ a:hover{
 
 .news-item-holder.flex{
   border: 2px solid cyan;
+  height: 100px;
 
 }
 
@@ -149,4 +150,38 @@ a:hover{
 img{
   width: 100%;
   object-fit: contain;
+}
+
+.nav.timeline-tab li{
+  list-style: none;
+}
+
+.ul-tab-content{
+  padding: 5px;
+  margin: 10px;
+}
+
+.ul-tab-content li{
+  list-style: none;
+}
+
+.ul-tab-content li span{
+  width: 100%;
+}
+
+.title-box{
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+button{
+  width: 100%;
+}
+
+.nav li{
+  padding-right: 15px;
+}
+
+.nav li a:hover{
+  text-decoration: underline;
 }
