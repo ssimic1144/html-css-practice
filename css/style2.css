@@ -1,0 +1,109 @@
+/* Globalno */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+/* Header */
+.header-navbar{
+    display: flex;
+    margin: auto;
+    width: 60%;
+}
+
+.header-navbar h1 a{
+    color: white;
+    background-color: red;
+}
+
+.header-navbar ul{
+    padding-top: 12px;
+    border-bottom: 2px solid lightgrey;
+    width: 100%;
+   
+}
+
+.header-navbar .to-right{
+    width: 20%;
+}
+
+.header-navbar li{
+    display: inline;
+    padding-left: 10px;
+}
+
+.header-navbar li a{
+    color:black;
+}
+
+.header-navbar li a:hover{
+    color:red;
+}
+
+/* Main */
+.main-homepage{
+    width: 60%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+/* Main navigacija*/
+.category-main{
+    display: flex;
+    border-bottom: 2px solid lightgray;
+}
+
+.category-main ul li{
+    display: inline;
+    padding: 5px;
+    
+}
+
+/* Glavni kontent */
+.main-category-content{
+    padding-top: 25px;
+}
+
+/* Top box */
+.top-box{
+    width: 60%;
+    display: flex;
+
+}
+
+.top-box .left-part{
+    width: 60%;
+}
+
+.comment-img{
+    width: 25px;
+    height: 25px;
+}
+
+.top-box .right-part{
+    width: 40%;
+    float: right;
+}
+
+.home-category-timeline{
+    float: right;
+}
+
+img {
+    width: 100%; /* or any custom size */
+    height: 100%; 
+    object-fit: contain;
+}
+
+.flex{
+    display:flex
+}
