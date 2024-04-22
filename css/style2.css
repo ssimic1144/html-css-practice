@@ -2,13 +2,16 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a{
     text-decoration: none;
 }
 
-ul li{
+ul{
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -26,53 +29,85 @@ img {
     object-fit: contain;
 }
 
+body{
+    font-size: 14px;
+}
+
+header{
+    width: 100%;
+}
+
 
 /* Header */
 .header-navbar{
-    display: flex;
+    max-width: 1240px;
     margin: auto;
-    width: 60%;
+    padding: 0 20px;
+    height: 60px;
+    position: relative;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+}
+
+.header-navbar h1{
+    line-height: 60px;
+    height: 60px;
+    background-color: red;
+    padding: 0 20px;
+    float: left;
 }
 
 .header-navbar h1 a{
     color: white;
     background-color: red;
+    height: 100%;
 }
 
-.header-navbar ul{
-    padding-top: 12px;
+
+.header-nav{
+    height: 60px;
+    position: relative;
+    display: block;
     border-bottom: 2px solid lightgrey;
-    width: 100%;
-   
+
 }
 
-.header-navbar .to-right{
-    width: 20%;
+.header-nav li{
+    float: left;
+    position: relative;
 }
 
-.header-navbar li{
-    display: inline;
-    padding-left: 10px;
+.header-nav .to-right{
+    float: right;
 }
 
-.header-navbar li a{
+.header-nav li a{
     color:black;
+    padding: 0 15px;
+    display: block;
+    line-height: 60px;
 }
 
-.header-navbar li a:hover{
+.header-nav li a:hover{
     color:red;
 }
 
 /* Main */
 .main-homepage{
-    width: 60%;
+    max-width: 1240px;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    position: relative;
 }
 
 /* Main navigacija*/
 .category-main{
-    display: flex;
+    height: 35px;
+    margin-bottom: 20px;
     border-bottom: 2px solid lightgray;
 }
 
@@ -84,38 +119,91 @@ img {
 
 /* Glavni kontent */
 .main-category-content{
-    padding-top: 15px;
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 2px solid lightgray;
+}
+
+.main-category-holder{
+    width: calc(100% - 320px);
+    border-right: 2px solid lightgray;
 }
 
 /* Top box */
 .top-box{
-    width: 60%;
-    display: flex;
+    width: 80%;
+    display: flex !important;
     border-bottom: solid 2px lightgray;
     padding: 5px;
 
 }
 
-.top-box .left-part{
+/* Lijevi dio */
+.left-part{
     width: 60%;
+    padding-right: 20px;
+    margin-right: 20px;
     border-right: solid 2px lightgray;
+    position: relative;
 }
 
-.left-part .first-news{
-    padding-right: 5px;
+
+.first-news a h2{
+    font-size: 30px;
 }
 
+.first-news .img-holder{
+    max-width: 556px;
+    margin-bottom: 15px;
+}
+
+.first-news .title{
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.first-news .summary{
+    margin-top: 15px;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: .2px;
+}
+
+/* Vezane vijesti */
 .home-related-holder{
+    margin-top: 30px;
 }
+
+.home-related-holder .main-title{
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: grey;
+    letter-spacing: .6px;
+}
+
 
 .home-related-holder ul li{
-    padding-bottom: 5px;
-    padding-top: 5px;
-    border-bottom: solid 2px lightgray;
+    padding: 12px 0;
+    border-top: solid 2px lightgray;
+}
+
+.home-related-holder a{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
 }
 
 .comments{
     float:right;
+    font-size: 11px;
+
 }
 
 .comment-img{
@@ -123,9 +211,27 @@ img {
     height: 20px;
 }
 
-.top-box .right-part{
-    width: 40%;
-    padding-left: 10px;
+.comment-count{
+    display:block;
+    float: left;
+    margin-left: 10px;
+}
+
+/* Desni dio */
+.right-part{
+    width: 38%;
+}
+
+.other-news-holder{
+    flex-direction: column;
+}
+
+.news-item-holder{
+    padding-bottom: 13px;
+}
+
+.img-holder{
+    flex-basis: 35%;
 }
 
 
