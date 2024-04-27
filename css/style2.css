@@ -7,6 +7,11 @@
 
 a{
     text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: red;
 }
 
 ul{
@@ -37,6 +42,9 @@ header{
     width: 100%;
 }
 
+.flex{
+    display:flex
+}
 
 /* Header */
 .header-navbar{
@@ -131,7 +139,6 @@ header{
 
 /* Top box */
 .top-box{
-    width: 80%;
     display: flex !important;
     border-bottom: solid 2px lightgray;
     padding: 5px;
@@ -233,14 +240,10 @@ header{
 }
 
 .flex-item{
-    flex-basis: 34%;
+    flex-basis: 33%;
 }
 
 .title{
-    flex: 1;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
     overflow: hidden;
     font-size: 16px;
     line-height: 1.2;
@@ -249,8 +252,12 @@ header{
 }
 
 .news-item-holder{
-    flex-direction: column;
+    flex-direction: row;
     padding-bottom: 13px;
+}
+
+.news-item-holder.first-other{
+    flex-direction: column;
 }
 
 .img-holder{
@@ -258,6 +265,20 @@ header{
     position: relative;
     overflow: hidden;
     
+}
+
+/* Featured */
+.featured-container{
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid lightgrey;
+    max-width: 855px;
+    position: relative;
+
+}
+
+.featured-container .featured-item{
+    flex: 1;
 }
 
 
@@ -308,6 +329,47 @@ header{
     margin-left: 55px;
 }
 
-.flex{
-    display:flex
+/* Footer */
+.main-footer{
+    max-width: 1240px;
+    margin: auto;
+    padding: 0 20px;
+    position: relative;
+    
+}
+
+.menu-footer{
+    padding: 25px 0;
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
+
+}
+
+.menu-footer ul{
+    flex: 1;
+    margin-right: 20px;
+}
+
+.menu-footer ul:not(:last-child){
+    border-right: 2px solid lightgrey;
+}
+
+.menu-footer ul li{
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: .4px;
+}
+
+.impressum{
+    line-height: 50px;
+    font-size: 13px;
+}
+
+.impressum li:not(:last-child){
+    float: left;
+    margin-right: 25px;
+}
+
+.impressum li{
+    float: right;
 }
