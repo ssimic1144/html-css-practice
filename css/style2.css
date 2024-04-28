@@ -46,6 +46,14 @@ header{
     display:flex
 }
 
+.img-holder{
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+
 /* Header */
 .header-navbar{
     max-width: 1240px;
@@ -226,29 +234,22 @@ header{
 
 /* Desni dio */
 .right-part{
-    width: 38%;
+    width: 40%;
+}
+
+.other-news-holder{
+    flex-direction: column;
+    margin-right: 20px;
 }
 
 .news-item-container{
     position: relative;
     margin-bottom: 15px;
+}
+
+.news-item-container:not(:last-child){
     border-bottom: 2px solid lightgrey;
-}
 
-.other-news-holder{
-    flex-direction: column;
-}
-
-.flex-item{
-    flex-basis: 33%;
-}
-
-.title{
-    overflow: hidden;
-    font-size: 16px;
-    line-height: 1.2;
-    margin-left: 15px;
-    margin-top: -2px;
 }
 
 .news-item-holder{
@@ -260,12 +261,24 @@ header{
     flex-direction: column;
 }
 
-.img-holder{
-    margin-bottom: 15px;
-    position: relative;
-    overflow: hidden;
-    
+.news-item-holder .flex-item{
+    flex-basis: 34%;
 }
+
+.news-item-holder:not(.first-other) .img-holder img{
+    width: 100px;
+}
+
+.news-item-holder .title{
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-left: 15px;
+    margin-top: -2px;
+}
+
+
+
 
 /* Featured */
 .featured-container{
@@ -299,7 +312,7 @@ header{
     display: inline-block;
     margin-right: 15px;
     font-size: 14px;
-    line-height: 12px;
+    line-height: 16px;
     font-weight: 500;
 }
 
@@ -309,7 +322,9 @@ header{
     letter-spacing: .5px;
 }
 
-
+.tab-content{
+    padding-top: 20px;
+}
 
 .ul-tab-content li{
     padding-bottom: 22px;
@@ -327,6 +342,10 @@ header{
 .title-box{
     width: calc(100% - 55px);
     margin-left: 55px;
+}
+
+.tab-content button{
+    width: 100%;
 }
 
 /* Footer */
