@@ -292,6 +292,7 @@ header{
 
 .featured-container .featured-item{
     flex: 1;
+    padding: 0 10px;
 }
 
 
@@ -357,23 +358,23 @@ header{
     
 }
 
-.menu-footer{
+.nav-footer{
     padding: 25px 0;
     border-top: 2px solid lightgrey;
     border-bottom: 2px solid lightgrey;
 
 }
 
-.menu-footer ul{
+.nav-footer ul{
     flex: 1;
     margin-right: 20px;
 }
 
-.menu-footer ul:not(:last-child){
+.nav-footer ul:not(:last-child){
     border-right: 2px solid lightgrey;
 }
 
-.menu-footer ul li{
+.nav-footer ul li{
     font-size: 12px;
     line-height: 2;
     letter-spacing: .4px;
